@@ -1,0 +1,7 @@
+{
+  "name": "msgListener",
+  "author": "1ue999",
+  "main": "net.mindustry_ddns.msgLog.MsgLog",
+  "description": "log message edits",
+  "version": 1.0
+}

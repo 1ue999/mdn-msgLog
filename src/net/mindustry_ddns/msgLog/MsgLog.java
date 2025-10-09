@@ -14,7 +14,7 @@ public class MsgLog extends Plugin{
     public void init(){
         Events.on(EventType.ConfigEvent.class, e -> {
             if(e.tile instanceof MessageBuild && e.value instanceof String msg && e.player != null){
-                Log.info("@ [@] edited a message, new content: @", e.player.name, e.player.uuid(), msg);
+                Log.info("@ [@] edited a message: @", e.player.name, e.player.uuid(), msg);
             }
         });
         Events.on(EventType.BlockBuildEndEvent.class, e -> {
@@ -22,7 +22,7 @@ public class MsgLog extends Plugin{
             if(e.config instanceof String msg){
                 Player player = e.unit.getPlayer();
                 if(player == null) return; //just in case
-                Log.info("@ [@] placed a message, content: @", player.name, player.uuid(), msg);
+                Log.info("@ [@] placed a message with content @", player.name, player.uuid(), msg);
             }
         });
     }

@@ -1,4 +1,4 @@
-package net.mindustry_ddns.msgLog;
+package net.ddns.mindustry.msgLog;
 
 import arc.*;
 import arc.util.*;
